@@ -1,0 +1,133 @@
+---
+import GitHub from "./icons/GitHub.astro";
+import NextJS from "./icons/NextJS.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import Link from "./icons/Link.astro";
+import LinkButton from "./LinkButton.astro";
+import Bootstrap from "./icons/Bootstrap.astro";
+import React from "./icons/React.astro";
+import MaterialUI from "./icons/MaterialUI.astro";
+
+const TAGS = {
+  NEXT: {
+    name: "Next.js",
+    class: "dark:bg-white/10 bg-black text-white",
+    icon: NextJS,
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-[#003159] text-white",
+    icon: Tailwind,
+  },
+  BOOTSTRAP: {
+    name: "Bootstrap",
+    class: "bg-purple-200 text-black",
+    icon: Bootstrap,
+  },
+  REACT: {
+    name: "React",
+    class: "dark:bg-white/20 bg-[#003159] text-white",
+    icon: React,
+  },
+  MATERIAL_UI: {
+    name: "Material UI",
+    class: "dark:bg-white/20 bg-[#003159] text-white",
+    icon: MaterialUI,
+  },
+};
+const PROJECTS = [
+  {
+    title: "RAWG - Buscador de videojuegos",
+    description:
+      "Buscador de videojuegos con API de RAWG. Incluye funcionalidad de búsqueda, filtrado y visualización de detalles de los juegos.",
+    link: "https://game-finder-page.vercel.app/",
+    github: "https://github.com/edwinmoreno77/_game_finder_page_",
+    image: "/projects/RAWG.webp",
+    tags: [TAGS.TAILWIND, TAGS.REACT],
+  },
+  {
+    title: "PetCenter - Herramienta para el registro de mascotas",
+    description:
+      "PetCenter es la herramienta perfecta para los amantes de las mascotas que desean mantener un registro organizado y completo de la salud de sus animales.",
+    github: "https://github.com/edwinmoreno77/Pet-Center",
+    image: "/projects/petcenter.webp",
+    tags: [TAGS.TAILWIND, TAGS.REACT],
+  },
+  {
+    title:
+      "Fatima Cake App - Aplicación web diseñada para la gestión de pasteles.",
+    description:
+      "Plataforma web para gestión de pastelería con API REST, interfaz moderna y sistema de pedidos personalizados",
+    link: "https://fatima-app-backend.onrender.com/",
+    github: "https://github.com/edwinmoreno77/Cake-App",
+    image: "/projects/fatima.webp",
+    tags: [TAGS.BOOTSTRAP, TAGS.REACT],
+  },
+  {
+    title: "Open Jira - Aplicación web diseñada para la gestión de proyectos.",
+    description:
+      "App inspirada en Jira. Incluye funcionalidad de arrastrar y soltar. Proyecto enfocado en practicar Context API, hooks avanzados y patrones de diseño en React.",
+    link: "https://open-jira-next-psi.vercel.app/",
+    github: "https://github.com/edwinmoreno77/OpenJira-next",
+    image: "/projects/openjira.webp",
+    tags: [TAGS.NEXT, TAGS.MATERIAL_UI],
+  },
+];
+---
+
+<div class="flex flex-col gap-y-16">
+  {
+    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+      <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+        <div class="w-full md:w-1/2">
+          <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-hidden rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+            <img
+              alt={title}
+              class="object-cover object-top w-full h-56 transition duration-500 md:h-full md:group-hover:scale-105"
+              loading="lazy"
+              src={image}
+            />
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 md:max-w-lg">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+            {title}
+          </h3>
+          <div class="flex flex-wrap mt-2">
+            <ul class="flex flex-row mb-2 gap-x-2">
+              {tags.map((tag) => (
+                <li>
+                  <span
+                    class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                  >
+                    <tag.icon class="size-4" />
+                    {tag.name}
+                  </span>
+                </li>
+              ))}
+            </ul>
+
+            <div class="mt-2 text-gray-700 dark:text-gray-400">
+              {description}
+            </div>
+            <footer class="flex items-end justify-start mt-4 gap-x-4">
+              {github && (
+                <LinkButton href={github}>
+                  <GitHub class="size-6" />
+                  Code
+                </LinkButton>
+              )}
+              {link && (
+                <LinkButton href={link}>
+                  <Link class="size-4" />
+                  Preview
+                </LinkButton>
+              )}
+            </footer>
+          </div>
+        </div>
+      </article>
+    ))
+  }
+</div>

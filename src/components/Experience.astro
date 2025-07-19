@@ -1,0 +1,50 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Mayo 2025 - Actualidad",
+    title: "Senior Reviewer for AI Training (Frontend)",
+    company: "Outlier",
+    description:
+      "Liderar la evaluación y validación de entregas de otros colaboradores, realizando ajustes críticos para asegurar calidad, precisión y adherencia a estándares de UI/UX, accesibilidad y código requeridos por los clientes para el entrenamiento de modelos de IA. Proporcionar retroalimentación experta y constructiva al equipo, elevar el nivel de las contribuciones y garantizar que las salidas de los modelos de IA sean intuitivas, funcionales y visualmente atractivas.",
+  },
+  {
+    date: "Abril 2025 - Mayo 2025",
+    title: "Front-End Developer Expertise for AI Training",
+    company: "Outlier",
+    description:
+      "Participar activamente en el entrenamiento de modelos de inteligencia artificial generativa, enfocándose en mejorar su comprensión y capacidad para generar código y diseño orientado al frontend web. Aplicar habilidades técnicas avanzadas en HTML, CSS, JavaScript, React y Next.js para crear, responder y evaluar preguntas sobre desarrollo frontend y diseño web, analizando y refinando el código generado por la IA con enfoque en calidad, principios de UI/UX, estándares web modernos y accesibilidad.",
+  },
+  {
+    date: "Junio 2025 - Actualidad",
+    title: "Desarrollador Full Stack Semi Senior",
+    company: "Programa Trainit",
+    description:
+      "Participación en MVPs multidisciplinarios sin fines de lucro como parte de un programa educativo y comunidad de simulación laboral gratuito. Trabajo acompañado de seniors en diferentes nichos laborales para ampliar portafolio y mejorar el perfil profesional frente a las empresas activas del mercado, utilizando tecnologías como Next.js y Tailwind CSS.",
+  },
+  {
+    date: "Febrero 2022 - Abril 2025",
+    title: "Full Stack Developer",
+    company: "Freelancer",
+    description:
+      "Desarrollo y mantenimiento de aplicaciones web utilizando React, Next.js, Node.js (Express) y Python (Flask), asegurando alto rendimiento y escalabilidad. Diseño e implementación de interfaces de usuario modernas y responsivas con Tailwind CSS, Bootstrap y MUI. Integración de estados globales con Redux Toolkit y creación de APIs RESTful para facilitar la comunicación entre frontend y backend. Optimización del rendimiento y seguridad de aplicaciones a través de buenas prácticas en desarrollo.",
+  },
+  {
+    date: "Octubre 2022 - Febrero 2023",
+    title: "Full Stack Developer",
+    company: "Hostyweb spa",
+    description:
+      "Desarrollo de interfaces de usuario personalizadas para aplicaciones web utilizando React, TypeScript y Styled Components, asegurando diseño responsivo y optimizado. Implementación y configuración de la arquitectura del software, incluyendo la creación de layouts (Header y Sidebar) y la gestión de rutas con React Router. Desarrollo de funcionalidades clave como autenticación de usuarios y gestión del estado global con Redux Toolkit. Desarrollo de pruebas unitarias y de integración utilizando Jest y React Testing Library.",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
