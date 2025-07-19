@@ -7,6 +7,7 @@ import LinkButton from "./LinkButton.astro";
 import Bootstrap from "./icons/Bootstrap.astro";
 import React from "./icons/React.astro";
 import MaterialUI from "./icons/MaterialUI.astro";
+import { getAssetPath } from "@/utils/paths";
 
 const TAGS = {
   NEXT: {
@@ -42,7 +43,7 @@ const PROJECTS = [
       "Buscador de videojuegos con API de RAWG. Incluye funcionalidad de búsqueda, filtrado y visualización de detalles de los juegos.",
     link: "https://game-finder-page.vercel.app/",
     github: "https://github.com/edwinmoreno77/_game_finder_page_",
-    image: "/projects/RAWG.webp",
+    image: getAssetPath("/projects/RAWG.webp"),
     tags: [TAGS.TAILWIND, TAGS.REACT],
   },
   {
@@ -50,7 +51,7 @@ const PROJECTS = [
     description:
       "PetCenter es la herramienta perfecta para los amantes de las mascotas que desean mantener un registro organizado y completo de la salud de sus animales.",
     github: "https://github.com/edwinmoreno77/Pet-Center",
-    image: "/projects/petcenter.webp",
+    image: getAssetPath("/projects/petcenter.webp"),
     tags: [TAGS.TAILWIND, TAGS.REACT],
   },
   {
@@ -60,7 +61,7 @@ const PROJECTS = [
       "Plataforma web para gestión de pastelería con API REST, interfaz moderna y sistema de pedidos personalizados",
     link: "https://fatima-app-backend.onrender.com/",
     github: "https://github.com/edwinmoreno77/Cake-App",
-    image: "/projects/fatima.webp",
+    image: getAssetPath("/projects/fatima.webp"),
     tags: [TAGS.BOOTSTRAP, TAGS.REACT],
   },
   {
@@ -69,7 +70,7 @@ const PROJECTS = [
       "App inspirada en Jira. Incluye funcionalidad de arrastrar y soltar. Proyecto enfocado en practicar Context API, hooks avanzados y patrones de diseño en React.",
     link: "https://open-jira-next-psi.vercel.app/",
     github: "https://github.com/edwinmoreno77/OpenJira-next",
-    image: "/projects/openjira.webp",
+    image: getAssetPath("/projects/openjira.webp"),
     tags: [TAGS.NEXT, TAGS.MATERIAL_UI],
   },
 ];
