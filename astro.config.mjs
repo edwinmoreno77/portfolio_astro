@@ -7,5 +7,5 @@ import robotsTxt from "astro-robots-txt";
 export default defineConfig({
   integrations: [tailwind(), robotsTxt()],
   base: "/portfolio_astro/",
-  site: "https://github.com/edwinmoreno77/portfolio_astro",
+  site: "https://edwinmoreno77.github.io/portfolio_astro",
 });
