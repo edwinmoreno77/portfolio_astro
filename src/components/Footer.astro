@@ -8,18 +8,37 @@ const currentYear = new Date().getFullYear();
   <div
     class="rounded-lg w-full max-w-screen-xl mx-auto md:flex md:items-center md:justify-between py-4"
   >
-    <span class="text-sm sm:text-center text-zinc-800/90 dark:text-zinc-200/90"
-      >© {currentYear}
-      <a
-        href="https://github.com/edwinmoreno77"
-        target="_blank"
-        class="hover:underline">Edwin Moreno</a
-      >. Inspirada en <a
-        href="https://porfolio.dev/"
-        target="_blank"
-        class="hover:underline">porfolio.dev</a
-      >
-    </span>
+    <div class="text-sm sm:text-center text-zinc-800/90 dark:text-zinc-200/90">
+      <span
+        >© {currentYear}
+        <a
+          href="https://github.com/edwinmoreno77"
+          target="_blank"
+          class="hover:underline">Edwin Moreno</a
+        >.
+      </span>
+      <br class="hidden sm:block" />
+      <span class="text-xs opacity-75">
+        Basado en el trabajo de
+        <a
+          href="https://github.com/midudev"
+          target="_blank"
+          class="hover:underline">Midudev</a
+        >
+        (<a href="https://porfolio.dev/" target="_blank" class="hover:underline"
+          >porfolio.dev</a
+        >)
+      </span>
+      <br class="hidden sm:block" />
+      <span class="text-xs opacity-60">
+        Licencia:
+        <a
+          href="https://creativecommons.org/licenses/by-nc/4.0/"
+          target="_blank"
+          class="hover:underline">CC BY-NC 4.0</a
+        >
+      </span>
+    </div>
     <ul
       class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0"
     >
