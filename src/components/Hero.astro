@@ -6,10 +6,10 @@ import MailIcon from "@/components/icons/Mail.astro";
 import SocialPill from "@/components/SocialPill.astro";
 ---
 
-<div class="max-w-xl">
-  <div class="flex gap-4 mb-4">
+<div class="max-w-xl flex flex-col items-center justify-center">
+  <div class="flex flex-col items-center gap-3 mb-3">
     <img
-      class="rounded-full shadow-lg size-16"
+      class="rounded-full border-2 border-gray-200 dark:border-gray-800 shadow-lg size-44"
       src="./me.jpg"
       alt={personalImageAlt}
     />
@@ -22,25 +22,28 @@ import SocialPill from "@/components/SocialPill.astro";
       <Badge>Disponible para trabajar</Badge>
     </a>
   </div>
-  <h1
-    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
-  >
-    Hey, soy Edwin
-  </h1>
-  <p
-    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
-  >
-    <strong>Desarrollador de Software Full Stack</strong> con +3 años de experiencia.
-    Me especializo en aplicaciones web.👨‍💻
-  </p>
-  <nav class="flex flex-wrap gap-4 mt-8">
-    <SocialPill href="mailto:edwinmoreno77@gmail.com">
-      <MailIcon class="size-4" />
-      Contáctame
-    </SocialPill>
-    <SocialPill href="https://linkedin.com/in/edwinmoreno777">
-      <LinkedInIcon class="size-4" />
-      LinkedIn
-    </SocialPill>
-  </nav>
+  <div class="flex flex-col items-center justify-center">
+    <h1
+      class="text-3xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+    >
+      Hey, soy Edwin
+    </h1>
+    <p
+      class="mt-6 text-lg md:text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300 text-center"
+    >
+      <strong>Desarrollador de Software </strong>Full Stack con <strong
+        >+3
+      </strong> años de experiencia. Me especializo en aplicaciones web.👨‍💻
+    </p>
+    <nav class="flex flex-wrap gap-4 mt-8 justify-center">
+      <SocialPill href="mailto:edwinmoreno77@gmail.com">
+        <MailIcon class="size-4" />
+        Contáctame
+      </SocialPill>
+      <SocialPill href="https://linkedin.com/in/edwinmoreno777">
+        <LinkedInIcon class="size-4" />
+        LinkedIn
+      </SocialPill>
+    </nav>
+  </div>
 </div>

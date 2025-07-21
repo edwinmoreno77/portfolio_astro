@@ -1,24 +1,76 @@
 ---
 const currentYear = new Date().getFullYear();
+import LinkedIn from "../components/icons/LinkedIn.astro";
+import GitHub from "../components/icons/GitHub.astro";
+import X from "../components/icons/X.astro";
 ---
 
 <footer
   class="opacity-80 m-4 min-[375px]:pl-4 md:pl-0 mt-16 w-full mx-auto container lg:max-w-4xl md:max-w-2xl mb-10 flex justify-center"
 >
-  <div
-    class="rounded-lg w-full max-w-screen-xl mx-auto md:flex md:items-center md:justify-between py-4"
-  >
-    <div class="text-sm sm:text-center text-zinc-800/90 dark:text-zinc-200/90">
-      <span
-        >© {currentYear}
-        <a
-          href="https://github.com/edwinmoreno77"
-          target="_blank"
-          class="hover:underline">Edwin Moreno</a
-        >.
-      </span>
-      <br class="hidden sm:block" />
-      <span class="text-xs opacity-75">
+  <div class="flex flex-col items-center justify-center w-full">
+    <div
+      class="rounded-lg w-full max-w-screen-xl flex items-center justify-evenly py-4"
+    >
+      <div
+        class="text-sm sm:text-center text-zinc-800/90 dark:text-zinc-200/90"
+      >
+        <span>
+          © {currentYear}
+          <a
+            href="https://github.com/edwinmoreno77"
+            target="_blank"
+            class="hover:underline">Edwin Moreno</a
+          >.
+        </span>
+      </div>
+      <ul
+        class="flex flex-wrap items-center justify-center text-sm font-medium dark:text-white/90"
+      >
+        <li>
+          <a href="#sobre-mi" class="hover:underline me-4 md:me-6">Sobre mí</a>
+        </li>
+        <li>
+          <a
+            id="contacto"
+            href="mailto:edwinmoreno77@gmail.com"
+            class="hover:underline">Contacto</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="flex flex-row items-center justify-center gap-4 my-2">
+      <a
+        href="https://www.linkedin.com/in/edwinmoreno777/"
+        target="_blank"
+        aria-label="LinkedIn"
+        class="hover:scale-110 transition-transform"
+      >
+        <LinkedIn
+          class="hover:brightness-125 transition-transform text-yellow-500"
+        />
+      </a>
+      <a
+        href="https://github.com/edwinmoreno77"
+        target="_blank"
+        aria-label="GitHub"
+        class="hover:scale-110 transition-transform"
+      >
+        <GitHub
+          class="hover:brightness-125 transition-transform text-yellow-500"
+        />
+      </a>
+      <a
+        href="https://twitter.com/Edwinmoreno777"
+        target="_blank"
+        aria-label="X"
+        class="hover:scale-110 transition-transform"
+      >
+        <X class="hover:brightness-125 transition-transform text-yellow-500" />
+      </a>
+    </div>
+    <div class="flex flex-col items-center justify-center w-full mt-2">
+      <span class="text-xs text-[10px] opacity-30">
         Basado en el trabajo de
         <a
           href="https://github.com/midudev"
@@ -29,29 +81,6 @@ const currentYear = new Date().getFullYear();
           >porfolio.dev</a
         >)
       </span>
-      <br class="hidden sm:block" />
-      <span class="text-xs opacity-60">
-        Licencia:
-        <a
-          href="https://creativecommons.org/licenses/by-nc/4.0/"
-          target="_blank"
-          class="hover:underline">CC BY-NC 4.0</a
-        >
-      </span>
     </div>
-    <ul
-      class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0"
-    >
-      <li>
-        <a href="#sobre-mi" class="hover:underline me-4 md:me-6">Sobre mí</a>
-      </li>
-      <li>
-        <a
-          id="contacto"
-          href="mailto:edwinmoreno77@gmail.com"
-          class="hover:underline">Contacto</a
-        >
-      </li>
-    </ul>
   </div>
 </footer>
