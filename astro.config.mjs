@@ -7,5 +7,5 @@ import robotsTxt from "astro-robots-txt";
 export default defineConfig({
   integrations: [tailwind(), robotsTxt()],
   base: "/",
-  site: "https://edwinm.dev",
+  site: "https://www.edwinm.dev",
 });
