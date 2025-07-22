@@ -1,27 +1,53 @@
-# Portfolio Personal
+# Edwin Moreno - Portafolio Personal
 
-Un portafolio personal moderno y responsive construido con Astro, Tailwind CSS y TypeScript.
+Portafolio personal de Edwin Moreno, desarrollador Full Stack con más de 3 años de experiencia en Chile. Especializado en React, Nextjs JavaScript, TypeScript y desarrollo web.
 
 ## 🚀 Características
 
-- **Diseño Responsive**: Se adapta perfectamente a todos los dispositivos
-- **Modo Oscuro/Claro**: Toggle automático con persistencia de preferencias
-- **SEO Optimizado**: Meta tags y estructura semántica
-- **Performance**: Carga rápida y optimizada
-- **Accesibilidad**: Cumple con estándares de accesibilidad web
+- **SEO Optimizado**: Meta tags, Open Graph, Twitter Cards, Schema.org structured data
+- **Sitemap.xml**: Generado dinámicamente para mejor indexación
+- **Robots.txt**: Configurado para permitir indexación completa
+- **PWA Ready**: Manifest.json para experiencia de aplicación
+
+- **Responsive Design**: Optimizado para todos los dispositivos
+- **Dark/Light Mode**: Soporte para temas claro y oscuro
 
 ## 🛠️ Tecnologías
 
-- [Astro](https://astro.build/) - Framework web moderno
-- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS utility-first
-- [TypeScript](https://www.typescriptlang.org/) - Tipado estático
-- [Vite](https://vitejs.dev/) - Build tool
+- **Framework**: Astro 4.4.5
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript
+- **Deployment**: GitHub Pages
+- **Domain**: www.edwinm.dev
 
-## 📦 Instalación
+## 📈 SEO Implementado
+
+### Meta Tags
+- Título optimizado: "Edwin Moreno - Desarrollador Full Stack | Programador Web en Chile | +3 años de experiencia"
+- Descripción rica en palabras clave
+- Meta tags para autor, keywords, robots
+- Canonical URLs
+
+### Open Graph & Twitter Cards
+- Imágenes optimizadas para redes sociales
+- Títulos y descripciones específicos
+- Configuración completa para Facebook y Twitter
+
+### Schema.org Structured Data
+- Datos estructurados de tipo Person
+- Información profesional y de contacto
+- Habilidades y experiencia codificadas
+
+### Archivos Técnicos
+- `sitemap.xml`: Generado dinámicamente
+- `robots.txt`: Configurado para indexación
+- `manifest.json`: Para experiencia PWA
+
+## 🚀 Instalación
 
 ```bash
 # Clonar el repositorio
-git clone <tu-repositorio>
+git clone https://github.com/edwinmoreno777/portfolio.git
 
 # Instalar dependencias
 pnpm install
@@ -33,18 +59,26 @@ pnpm dev
 pnpm build
 ```
 
-## 🎨 Personalización
 
-1. Modifica `src/pages/index.astro` para cambiar el contenido principal
-2. Actualiza las imágenes en `public/`
-3. Personaliza los colores en `tailwind.config.mjs`
-4. Modifica los componentes en `src/components/`
 
-## 📄 Licencia
+## 🌐 Dominio y DNS
 
-Este proyecto está bajo la licencia [Creative Commons Attribution-NonCommercial 4.0 International](LICENSE.md).
+El sitio está configurado para funcionar en `www.edwinm.dev` con:
+- CNAME configurado en `public/CNAME`
+- Configuración de sitio en `astro.config.mjs`
 
-## 🙏 Atribución
+## 📝 Optimización SEO
+
+### Palabras Clave Principales
+- Edwin Moreno
+- Desarrollador Full Stack
+- Programador Web Chile
+- React Developer
+- JavaScript Developer
+- TypeScript Developer
+
+
+
 
 Este portafolio está **inspirado y basado** en el trabajo original de [Midudev](https://github.com/midudev) y su proyecto [porfolio.dev](https://porfolio.dev/).
 
@@ -53,16 +87,10 @@ Este portafolio está **inspirado y basado** en el trabajo original de [Midudev]
 - **Proyecto Original**: [porfolio.dev](https://porfolio.dev/)
 - **Licencia Original**: Creative Commons Attribution-NonCommercial 4.0 International
 
-### Modificaciones Realizadas:
-- Adaptación del diseño y estructura
-- Personalización de contenido y estilos
-- Mejoras en la implementación técnica
+Este proyecto está bajo la Licencia MIT. Ver `LICENSE.md` para más detalles.
 
 ## 📞 Contacto
 
-- **GitHub**: [@edwinmoreno77](https://github.com/edwinmoreno77)
 - **Email**: edwinmoreno77@gmail.com
-
----
-
-**Nota**: Este proyecto es para uso educativo y personal. Para uso comercial, contacta al creador original.
+- **LinkedIn**: [edwinmoreno777](https://linkedin.com/in/edwinmoreno777)
+- **Sitio Web**: [www.edwinm.dev](https://www.edwinm.dev)
