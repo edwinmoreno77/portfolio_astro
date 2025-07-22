@@ -7,7 +7,7 @@ Portafolio personal de Edwin Moreno, desarrollador Full Stack con más de 3 año
 - **SEO Optimizado**: Meta tags, Open Graph, Twitter Cards, Schema.org structured data
 - **Sitemap.xml**: Generado dinámicamente para mejor indexación
 - **Robots.txt**: Configurado para permitir indexación completa
-- **PWA Ready**: Manifest.json para experiencia de aplicación
+
 
 - **Responsive Design**: Optimizado para todos los dispositivos
 - **Dark/Light Mode**: Soporte para temas claro y oscuro
@@ -20,13 +20,7 @@ Portafolio personal de Edwin Moreno, desarrollador Full Stack con más de 3 año
 - **Deployment**: GitHub Pages
 - **Domain**: www.edwinm.dev
 
-## 📈 SEO Implementado
 
-### Meta Tags
-- Título optimizado: "Edwin Moreno - Desarrollador Full Stack | Programador Web en Chile | +3 años de experiencia"
-- Descripción rica en palabras clave
-- Meta tags para autor, keywords, robots
-- Canonical URLs
 
 ### Open Graph & Twitter Cards
 - Imágenes optimizadas para redes sociales
@@ -41,7 +35,7 @@ Portafolio personal de Edwin Moreno, desarrollador Full Stack con más de 3 año
 ### Archivos Técnicos
 - `sitemap.xml`: Generado dinámicamente
 - `robots.txt`: Configurado para indexación
-- `manifest.json`: Para experiencia PWA
+
 
 ## 🚀 Instalación
 
@@ -64,7 +58,7 @@ pnpm build
 ## 🌐 Dominio y DNS
 
 El sitio está configurado para funcionar en `www.edwinm.dev` con:
-- CNAME configurado en `public/CNAME`
+- CNAME configurado en `/CNAME`
 - Configuración de sitio en `astro.config.mjs`
 
 ## 📝 Optimización SEO
