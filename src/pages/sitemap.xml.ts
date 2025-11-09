@@ -5,12 +5,39 @@ export const GET: APIRoute = async ({ site }) => {
     throw new Error('site is not defined in astro.config.mjs');
   }
 
+  const baseUrl = site.toString().replace(/\/$/, '');
+  const lastmod = new Date().toISOString();
+
   const pages = [
     {
-      url: site.toString(),
-      lastmod: new Date().toISOString(),
+      url: baseUrl,
+      lastmod: lastmod,
       changefreq: 'weekly',
       priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/person.json`,
+      lastmod: lastmod,
+      changefreq: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/#experiencia`,
+      lastmod: lastmod,
+      changefreq: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/#proyectos`,
+      lastmod: lastmod,
+      changefreq: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/#sobre-mi`,
+      lastmod: lastmod,
+      changefreq: 'monthly',
+      priority: 0.7,
     },
   ];
 
@@ -33,6 +60,7 @@ export const GET: APIRoute = async ({ site }) => {
   return new Response(sitemap, {
     headers: {
       'Content-Type': 'application/xml',
+      'Cache-Control': 'public, max-age=3600',
     },
   });
 }; 

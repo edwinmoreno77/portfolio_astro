@@ -28,10 +28,29 @@ const canonical = canonicalURL ? new URL(canonicalURL, Astro.site) : Astro.url;
     <meta name="author" content="Edwin Moreno" />
     <meta
       name="keywords"
-      content="Edwin Moreno, desarrollador web, programador, full stack, React, JavaScript, TypeScript, Chile, desarrollo de software, frontend, backend"
+      content="Edwin Moreno, Edwin Moreno Pérez, Edwin Moreno Perez, Edwin, dev, edwin dev, edwinm.dev, edwin moreno desarrollador, edwin moreno programador, edwin moreno chile, desarrollador web, programador, full stack, React, JavaScript, TypeScript, Chile, desarrollo de software, frontend, backend, portfolio desarrollador, portafolio web, Next.js, Node.js, Tailwind CSS, desarrollador freelance Chile, programador freelance, desarrollo aplicaciones web, UI/UX developer, edwin moreno portfolio, edwin moreno github"
     />
-    <meta name="robots" content="index, follow" />
+
+    <!-- Additional Name Variations for Search -->
+    <meta name="profile:first_name" content="Edwin" />
+    <meta name="profile:last_name" content="Moreno" />
+    <meta name="profile:username" content="edwinmoreno777" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
     <link rel="canonical" href={canonical} />
+
+    <!-- Language and Regional URLs -->
+    <link rel="alternate" hreflang="es" href={canonical} />
+    <link rel="alternate" hreflang="es-CL" href={canonical} />
+    <link rel="alternate" hreflang="x-default" href={canonical} />
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="CL" />
+    <meta name="geo.placename" content="Chile" />
+    <meta name="geo.position" content="-33.4489;-70.6693" />
+    <meta name="ICBM" content="-33.4489, -70.6693" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -59,6 +78,8 @@ const canonical = canonicalURL ? new URL(canonicalURL, Astro.site) : Astro.url;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/me.webp" />
     <link rel="manifest" href="/manifest.json" />
+    <link rel="author" href="/humans.txt" />
+    <link rel="alternate" type="application/ld+json" href="/person.json" />
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -71,11 +92,20 @@ const canonical = canonicalURL ? new URL(canonicalURL, Astro.site) : Astro.url;
         "@context": "https://schema.org",
         "@type": "Person",
         name: "Edwin Moreno",
+        alternateName: [
+          "Edwin Moreno Pérez",
+          "Edwin Moreno Perez",
+          "Edwin M.",
+          "Edwin",
+          "edwinmoreno777",
+          "edwin dev",
+        ],
         url: "https://www.edwinm.dev",
         image: "https://www.edwinm.dev/me.webp",
         sameAs: [
           "https://linkedin.com/in/edwinmoreno777",
           "https://github.com/edwinmoreno777",
+          "https://twitter.com/edwinmoreno777",
         ],
         jobTitle: "Desarrollador Full Stack",
         worksFor: {
@@ -83,10 +113,11 @@ const canonical = canonicalURL ? new URL(canonicalURL, Astro.site) : Astro.url;
           name: "Freelance",
         },
         description:
-          "Desarrollador Full Stack con más de 3 años de experiencia especializado en aplicaciones web",
+          "Edwin Moreno es un desarrollador Full Stack con más de 3 años de experiencia especializado en aplicaciones web con React, TypeScript, Node.js y tecnologías modernas",
         address: {
           "@type": "PostalAddress",
-          addressCountry: "Chile",
+          addressCountry: "CL",
+          addressLocality: "Chile",
         },
         knowsAbout: [
           "Desarrollo Web",
@@ -96,6 +127,89 @@ const canonical = canonicalURL ? new URL(canonicalURL, Astro.site) : Astro.url;
           "Node.js",
           "Frontend Development",
           "Backend Development",
+          "Next.js",
+          "Tailwind CSS",
+          "Astro",
+          "Full Stack Development",
+          "Web Design",
+          "RESTful APIs",
+        ],
+        alumniOf: {
+          "@type": "Organization",
+          name: "Desarrollador autodidacta",
+        },
+        nationality: {
+          "@type": "Country",
+          name: "Chile",
+        },
+        knowsLanguage: [
+          {
+            "@type": "Language",
+            name: "Español",
+          },
+          {
+            "@type": "Language",
+            name: "Inglés",
+          },
+        ],
+      })}
+    />
+
+    <!-- WebSite Schema -->
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: "Edwin Moreno - Desarrollador Full Stack",
+        alternateName: "Edwin Moreno - Portfolio",
+        url: "https://www.edwinm.dev",
+        description:
+          "Portfolio profesional de Edwin Moreno, desarrollador Full Stack especializado en React, TypeScript y Node.js",
+        inLanguage: "es-ES",
+        author: {
+          "@type": "Person",
+          name: "Edwin Moreno",
+        },
+        potentialAction: {
+          "@type": "SearchAction",
+          target: "https://www.edwinm.dev/?s={search_term_string}",
+          "query-input": "required name=search_term_string",
+        },
+      })}
+    />
+
+    <!-- BreadcrumbList Schema -->
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Inicio",
+            item: "https://www.edwinm.dev",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Experiencia",
+            item: "https://www.edwinm.dev/#experiencia",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Proyectos",
+            item: "https://www.edwinm.dev/#proyectos",
+          },
+          {
+            "@type": "ListItem",
+            position: 4,
+            name: "Sobre mí",
+            item: "https://www.edwinm.dev/#sobre-mi",
+          },
         ],
       })}
     />

@@ -1,0 +1,28 @@
+/* TEAM */
+Developer: Edwin Moreno
+Alternative names: Edwin Moreno Pérez, Edwin Moreno Perez
+Site: https://www.edwinm.dev
+Location: Chile
+Email: edwinmoreno777@gmail.com
+
+/* ABOUT */
+Name: Edwin Moreno
+Role: Full Stack Developer / Desarrollador Full Stack
+Skills: React, JavaScript, TypeScript, Node.js, Next.js, Tailwind CSS
+Experience: +3 years / +3 años de experiencia
+Country: Chile
+
+/* SITE */
+Site URL: https://www.edwinm.dev
+Language: Spanish / Español
+Doctype: HTML5
+IDE: VS Code
+Technologies: Astro, React, TypeScript, Tailwind CSS, Next.js, Vue.js, HTML, CSS, JavaScript, Node.js, Python
+
+/* SOCIAL */
+GitHub: https://github.com/edwinmoreno777
+LinkedIn: https://linkedin.com/in/edwinmoreno777
+Twitter: https://twitter.com/edwinmoreno777
+
+/* THANKS */
+Astro - https://astro.build
