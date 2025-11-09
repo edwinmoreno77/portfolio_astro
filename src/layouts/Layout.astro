@@ -3,6 +3,7 @@ import "@fontsource-variable/onest";
 
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import GoogleAnalytics from "../components/GoogleAnalytics.astro";
 import { ViewTransitions } from "astro:transitions";
 
 interface Props {
@@ -213,6 +214,9 @@ const canonical = canonicalURL ? new URL(canonicalURL, Astro.site) : Astro.url;
         ],
       })}
     />
+
+    <!-- Google Analytics -->
+    <GoogleAnalytics />
 
     <ViewTransitions />
   </head>
