@@ -16,12 +16,6 @@ export const GET: APIRoute = async ({ site }) => {
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/person.json`,
-      lastmod: lastmod,
-      changefreq: 'monthly',
-      priority: 0.9,
-    },
-    {
       url: `${baseUrl}/#experiencia`,
       lastmod: lastmod,
       changefreq: 'monthly',

@@ -10,11 +10,17 @@ export const GET: APIRoute = async () => {
     "familyName": "Moreno",
     "additionalName": "Moreno",
     "alternateName": [
+      "Edwin Efraín Moreno Pérez",
+      "Edwin Efrain Moreno Perez",
       "Edwin Moreno Pérez",
-      "Edwin Moreno Perez", 
+      "Edwin Moreno Perez",
+      "Edwin Moreno", 
       "Edwin M.",
+      "Edwinm",
+      "Edwinmdev",
       "Edwin",
       "edwinmoreno777",
+      "edwinmoreno77",
       "edwin moreno dev",
       "edwin dev"
     ],
@@ -54,9 +60,11 @@ export const GET: APIRoute = async () => {
       "Desarrollo Web",
       "Programación",
       "React",
+      "Vue.js",
       "JavaScript", 
       "TypeScript",
       "Node.js",
+      "Python",
       "Frontend Development",
       "Backend Development",
       "Full Stack Development",
@@ -66,7 +74,13 @@ export const GET: APIRoute = async () => {
       "Web Design",
       "RESTful APIs",
       "Git",
-      "GitHub"
+      "GitHub",
+      "MongoDB",
+      "SQL",
+      "Supabase",
+      "Express.js",
+      "Flask",
+      "FastAPI"
     ],
     "knowsLanguage": [
       {
@@ -96,6 +110,7 @@ export const GET: APIRoute = async () => {
     headers: {
       'Content-Type': 'application/ld+json',
       'Cache-Control': 'public, max-age=86400',
+      'X-Robots-Tag': 'noindex',
     },
   });
 };
